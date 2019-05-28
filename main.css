@@ -1,0 +1,320 @@
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+body {
+	-webkit-text-size-adjust: none;
+}
+
+
+/* Wrapper */
+
+.wrapper {
+	position: relative;	
+}
+
+	.wrapper .title {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		text-align: center;
+		text-transform: uppercase;
+		display: block;
+		font-weight: 700;
+		letter-spacing: 0.25em;
+		font-size: 0.9em;
+		width: 25em;
+		height: 3.25em;
+		top: -3.25em;
+		line-height: 3.25em;
+		margin-bottom: -3.25em;
+		margin-left: -12.5em;
+		padding-top: 0.5em;
+	}
+
+		.wrapper .title:before {
+			content: '';
+			position: absolute;
+			bottom: -38px;
+			left: -35px;
+			width: 35px;
+			height: 38px;			
+		}
+
+		.wrapper .title:after {
+			-moz-transform: scaleX(-1);
+			-webkit-transform: scaleX(-1);
+			-ms-transform: scaleX(-1);
+			transform: scaleX(-1);
+			content: '';
+			position: absolute;
+			bottom: -38px;
+			right: -35px;
+			width: 35px;
+			height: 38px;			
+		}
+
+	
+/* Page Wrapper */
+
+#page-wrapper > section {
+	margin-bottom: 0;
+}
+
+/* Header */
+
+#header {
+	background: url("img/header1.jpg") no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	position: relative;
+	height: 24em;	
+	padding: 0;
+}
+
+	#header:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url("img/header1.jpg") no-repeat;
+    	-moz-background-size: 100%; /* Firefox 3.6+ */
+    	-webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    	-o-background-size: 100%; /* Opera 9.6+ */
+    	background-size: 100%;
+	}
+
+	.homepage #header {
+		height: 35em;
+	}
+
+/* Logo */
+
+#logo {	
+	width: 100%;	
+	position: relative;
+	top: 1.5em;
+	text-align: left;
+}
+
+	#logo h1 {				
+		font-weight: 900;
+		text-transform: uppercase;
+		color: rgb(183, 255, 38);
+		margin-top: 5em;		
+		font-size: 2em;
+		letter-spacing: 0.25em;
+	}
+
+	#logo p {		
+		color: black;		
+		text-transform: uppercase;
+		margin-top: 1em;
+		letter-spacing: 0.2em;
+		font-size: 0.9em;
+	}
+
+	#logoimg {
+		
+		float: left;
+        padding-left: 50px;
+		opacity: 0.6;
+		width: 350px;
+        filter: alpha(opacity=60); /*для IE8 и более ранних версий*/
+	  }
+	
+	#logonum {
+		font-size: 1.25em;
+		letter-spacing: 0.2em;
+		color: black;
+	}
+
+/* Nav */
+
+#nav {
+	position: absolute;
+	display: block;
+	top: 2.5em;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+	#nav > ul {
+		display: inline-block;
+		border-radius: 0.35em;
+		box-shadow: inset 0px 0px 1px 1px black;
+		padding: 0 1.5em 0 1.5em;
+	}
+
+		#nav > ul > li {
+			display: inline-block;
+			text-align: center;
+			padding: 0 1.5em 0 1.5em;
+		}
+
+			#nav > ul > li > ul {
+				display: none;
+			}
+
+			#nav > ul > li > a, #nav > ul > li > span {
+				display: block;
+				color: black;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: 0.7em;
+				letter-spacing: 0.25em;
+				height: 5em;
+				line-height: 5em;
+				-moz-transition: all .25s ease-in-out;
+				-webkit-transition: all .25s ease-in-out;
+				-o-transition: all .25s ease-in-out;
+				-ms-transition: all .25s ease-in-out;
+				transition: all .25s ease-in-out;
+				outline: 0;
+			}
+
+			#nav > ul > li:hover > a {
+				color: #fff;
+			}
+
+			#nav > ul > li.active > a, #nav > ul > li.active > span {
+				color: #fff;
+			}
+
+/* Main */
+#main {
+	background: rgba(12, 183, 196, 0.712);
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+	background-size: 100%;	
+	text-align: center;
+	padding-top: 2em;
+}
+	#main h2 {
+		font-weight: bold;
+		font-size: 1.5em;
+		color: rgba(131, 79, 1, 0.829);
+		padding-bottom: 1em; 
+	}
+	#main p {
+		padding-left: 10em;
+		padding-right: 10em;
+	}
+#images img{
+	border: 2px solid rgb(183, 255, 38); 
+}
+#place p {
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+#place h3 {
+	color: rgba(131, 79, 1, 0.829);  
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.box {
+	padding: 1.5em 20em 0em 20em;
+}
+	.box h3 {
+		color: rgb(183, 255, 38);  
+		font-weight: bold;
+	}
+.description h3{
+	padding-top: 2em;
+	color: rgb(183, 255, 38);  
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#priceList {
+	padding-bottom: 3em;
+}
+	#priceList h3{
+		padding-top: 2em;
+		padding-bottom: 2em;  
+		font-weight: bold;
+	}
+	#priceList li{
+		padding-top: 1em;
+	}
+	
+#empty {
+	padding-bottom: 3em;
+}
+
+
+/* Footer */
+
+
+#contactinfo, #copyright {
+	background: rgba(205, 247, 19, 0.966);	
+}
+
+#contactinfo h2 {
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;				
+	font-size: 1em;	
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+#box {
+	text-align: center;
+	border-radius: 0.35em;
+	padding-bottom: 1em;	
+}
+
+#box h3 {
+	font-weight: bold;
+	text-decoration: underline;
+	padding-bottom: 0.5em;
+}
+
+#copyright {
+	text-align: center;
+	padding-top: 3em;
+	padding-bottom: 1em;		
+}
